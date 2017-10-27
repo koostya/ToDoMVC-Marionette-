@@ -1,0 +1,14 @@
+<script id="ItemView" type="text/template">
+    <% _.each(items, function(item) { %>
+        <div class="item" id="<%- item.id %>">
+            <div class="checkbox">
+                <input type="checkbox" id="<%- item.checkid %>">
+                <label for="<%- item.checkid %>"></label>
+            </div>
+            <div class="text">
+                <span><%- item.text %></span>
+            </div>
+            <div class="remove"></div>
+        </div>
+    <% }) %>
+</script>
